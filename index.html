@@ -21,7 +21,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.mobile.css" />
-    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.blue.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme.css" />
     <title>RepoFinder</title>
 </head>
 
@@ -41,8 +41,10 @@
           <ul id="search_list" data-role="listview"></ul>
           <br><br>
           <h3>Latest Repos</h3>
-
-          <ul id="repo_list" data-role="listview"></ul>
+          <form  class="ui-filterable">
+            <input type="text" id="fitler_txtbox" data-type="search" placeholder="Filter item..">
+          </form>
+          <ul id="repo_list" data-role="listview" data-filter="true" data-input="#fitler_txtbox"></ul>
         </div>
 
         <footer data-role="footer"> 
