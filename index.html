@@ -20,39 +20,23 @@
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
 
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.css" />
-    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme.css" />
+    <link rel="stylesheet" href="css/jquery.mobile.css" />
+    <link rel="stylesheet" href="css/jquery.mobile.blue.css" />
+     
     <title>RepoFinder</title>
 </head>
 
 <body>
-    <div class="app">
-       <div data-role="page">
-       <header data-role="header">
-        <h1>RepoFinder</h1>
-       </header>
-        
-        <div data-role="content">
-          <form>
-              <input id="search_input" type="text" data-type="search" placeholder="Search by user..">
-              <button type="button" id="search_btn">Search</button>
-          </form>
-          <div id="user_info"></div>
-          <ul id="search_list" data-role="listview"></ul>
-          <br><br>
-          <h3>Latest Repos</h3>
-          <form  class="ui-filterable">
-            <input type="text" id="fitler_txtbox" data-type="search" placeholder="Filter item..">
-          </form>
-          <ul id="repo_list" data-role="listview" data-filter="true" data-input="#fitler_txtbox"></ul>
-        </div>
-
-        <footer data-role="footer"> 
-          <h4>Repofinder &copy;2016</h4>
-        </footer>
+   <div  data-role="page" class="page">
+   <div data-role="content">
+       <div  id="landing-page">
+         <img src="img/logo_small.png" alt="gitFinder">
        </div>
-        
-    </div>
+       <div  id="landing-enter">
+          <button  id="enter_btn" class="ui-btn-inner ui-btn-corner-all">Click to Enter</button>
+       </div>
+   </div>
+   </div>    
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/jquery.mobile.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
