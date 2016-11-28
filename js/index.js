@@ -4,6 +4,12 @@ $(document).ready(function(){
         getRepos();
    });
 
+   $('.ui-input-clear').click(function(){
+
+         $('#search_list').hide();
+         $('#user_info').hide();
+   });
+
    $('#search_btn').click(function(){
      var search_html='';
      var username= $('#search_input').val();
@@ -18,7 +24,7 @@ $(document).ready(function(){
         dataType:"jsonp",
         success:function(response){
             /// getting profile
-            $.ajax({
+           /* $.ajax({
 
                 url:user_url,
                 dataType:"jsonp",
@@ -29,8 +35,8 @@ $(document).ready(function(){
                 }
 
             });
-
-
+          */
+            $('#user_info').html('<h3> User: '+username+'</h3>');
             $.each(response.data,function(i,item){
                  search_html +='<li>'+
                  '<h1><a href="'+this.html_url+'" target="_blank">'+this.name+'</a></h1>'+
