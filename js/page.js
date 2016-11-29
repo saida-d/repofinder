@@ -51,7 +51,6 @@ $(document).ready(function(){
 
             });
             
-           
             $('#search_list').append(search_html);
             $('#search_list').listview("refresh");
 
