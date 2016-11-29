@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.repofinder" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.phonegap.repofinder123" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>RepoFinder</name>
     <description>
-        Github repository app
+        Github Repository App by Mach Telecommunications Systems
     </description>
-    <author email="contact@saidapro.com" href="http://saidapro.com">
+    <author email="contact@saidapro.com" href="http://machbrunei.com">
         Saida D
     </author>
     <content src="index.html" />
